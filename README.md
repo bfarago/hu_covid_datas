@@ -9,7 +9,7 @@ Day zero in curves is 2020-03-04 when the first 2 people tested positive to Covi
 <BR>
 <CENTER>
 <B>Figure 1:</B><BR>
-Delta values are oversampled 24 times to get hourly resolution, interpolated, then fintered to calculate the mean curve.
+Delta values are oversampled 24 times to get hourly resolution, interpolated, then filtered to calculate the mean curve.
 <br>
 <img src='figure1.jpg'>
 <BR>
@@ -21,5 +21,18 @@ The curves are linear interpolated only.
 <B>Figure 3:</B><BR>
 <img src='figure3.jpg'>
 <BR>
-<B>Matlab/Octave source:</B><BR>
+Day zero on figure 4-6 is 2020-04-01 when the county statistics started to shown on government publications. <Br>
+<B>Figure 4:</B><BR>
+Absolute numbers where max is less than 50.<br>
+<img src='figure4.jpg'>
+<BR>
+<B>Figure 5:</B><BR>
+Absolute numbers where max is greater than 50.<br>
+<img src='figure5.jpg'>
+<BR>
+<B>Figure 6:</B><BR>
+Delta numbers where daily change max is greater than 10.
+<BR>
+<img src='figure6.jpg'>
+<BR>
 </CENTER>
