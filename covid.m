@@ -28,8 +28,9 @@ DCured = Inputs{2}(:, 7);
 DInfected = Inputs{2}(:, 8);
 
 #interpolation
-t=0:66;
-iX=[0:0.05:66]
+inputrows=rows(Datums)-1
+t=0:inputrows;
+iX=[0:0.05:inputrows]
 intpmode="spline"
 #intpmode="pchip"
 iSummInfected= interp1( t, SummInfected, iX, intpmode);
@@ -52,9 +53,9 @@ Bs = sos(:,1:3); % Section numerator polynomials
 As = sos(:,4:6); % Section denominator polynomials
 iDAInf= filter(Bs, As, iDAInf);
 #}
-[iDCured2, lambda]= regdatasmooth(iX, iDCured,"d",4,"stdev",3e+1,"midpointrule");
-[iDAInf2, lambda]= regdatasmooth(iX, iDAInf,"d",4,"stdev",3e+1,"midpointrule");
-[iDInfected2, lambda]= regdatasmooth(iX, iDInfected,"d",4,"stdev",3e+1,"midpointrule");
+[iDCured2, lambda]= regdatasmooth(iX, iDCured,"d",4,"stdev",1e+1,"midpointrule");
+[iDAInf2, lambda]= regdatasmooth(iX, iDAInf,"d",4,"stdev",1e+1,"midpointrule");
+[iDInfected2, lambda]= regdatasmooth(iX, iDInfected,"d",4,"stdev",2e+1,"midpointrule");
 #K=1341;
 #iAInf=interpft( ActiveInfected, K);
 #iCured=interpft( DCured, K);
