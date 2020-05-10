@@ -35,4 +35,9 @@ Delta numbers where daily change max is greater than 10.
 <BR>
 <img src='figure6.jpg'>
 <BR>
+<B>Figure 7:</B><BR>
+The normalized deltas on all the counties.
+<BR>
+<img src='figure7.jpg'>
+<BR>
 </CENTER>
