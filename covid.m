@@ -86,13 +86,14 @@ semilogy(Died, ActiveInfected, 'r;Active;');
 semilogy(Died, Died, 'k;Died;');
 semilogy(Died, Cured , 'g;Cured;');
 hold off;
+legend("location", "northwest");
 print -djpg 'figure2.jpg'
 #
 
 #figure 3
 figure;
 plot(iX, iAInf, 'r;Active;');
-title('Deltas based on mortality'), xlabel('Days'), ylabel('Nr of people');
+title('Deltas based on days'), xlabel('Days'), ylabel('Nr of people');
 hold on;
 plot(iX, iSummInfected, 'b;Infected;');
 plot(iX, iDied, 'k;Died;');
