@@ -61,6 +61,11 @@ hold off;
 print -djpg 'figure4.jpg'
 #
 
+#one county only
+figure
+plot(Datums, Inputs{2}(:, 2));
+title('Baranya megye'), xlabel('Days'), ylabel('Nr of people');
+
 k=1;
 figure
 hold on;
@@ -112,6 +117,7 @@ for n=1:21
   labels2(n)=Labels(idx1(n));
 end
 imagesc( d2 );
+#meshc(d2);
 #colormap (prism (10));
 yticks([1:7:max(Datums)])
 dateaxis('y',29, StartDate);

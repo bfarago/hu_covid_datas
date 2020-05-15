@@ -55,7 +55,7 @@ iDAInf= filter(Bs, As, iDAInf);
 #}
 [iDCured2, lambda]= regdatasmooth(iX, iDCured,"d",4,"stdev",1e+1,"midpointrule");
 [iDAInf2, lambda]= regdatasmooth(iX, iDAInf,"d",4,"stdev",1e+1,"midpointrule");
-[iDInfected2, lambda]= regdatasmooth(iX, iDInfected,"d",4,"stdev",2e+1,"midpointrule");
+[iDInfected2, lambda]= regdatasmooth(iX, iDInfected,"d",2,"stdev",5e+0,"midpointrule");
 #K=1341;
 #iAInf=interpft( ActiveInfected, K);
 #iCured=interpft( DCured, K);
