@@ -11,7 +11,7 @@ pkg load data-smoothing;
 # Open Input csv file
 fin = fopen('adat.csv', 'rt');
 Inputs= textscan(fin, '%s %f %f %f %f %f %f %f %f',
-  'Delimiter', ',', 'CollectOutput', 1, 'HeaderLines', 1);
+  'Delimiter', "\t", 'CollectOutput', 1, 'HeaderLines', 1);
 fclose(fin);
 DateFormatIn='yyyy-mm-dd';
 StartDate= datenum(Inputs{1}(1,1), DateFormatIn);
