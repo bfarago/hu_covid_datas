@@ -4,9 +4,14 @@ Matlab / Octave example project using Hungarian Covid19 raw datas
 The aim of this project to help on you learing the Matlab script language quickly.
 
 Input data come from this <a href=https://hu.wikipedia.org/wiki/2020-as_COVID%E2%80%9319-koronav%C3%ADrus-j%C3%A1rv%C3%A1ny_Magyarorsz%C3%A1gon>wikipedia link</a>,
-updated on 2020-05-21. <br>
+updated on 2020-05-24. <br>
 Day zero in curves is 2020-03-04 when the first 2 people tested positive to Covid19 in Budapest. <Br>
-<BR>
+Other animated curve:
+<a href=https://aatishb.com/covidtrends/?location=Australia&location=Brazil&location=Canada&location=China&location=France&location=Germany&location=Hong+Kong&location=Hungary&location=India&location=Italy&location=Japan&location=Russia&location=Singapore&location=South+Korea&location=Spain&location=Taiwan&location=Turkey&location=US&location=United+Kingdom
+>Trajectory</a> |
+<a href=http://wazestats.com/active.php?city=7>Waze stats</a> |
+<a href=https://www.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6>Johns Hopkins University</a>
+<BR><BR>
 <CENTER>
 <B>Figure 1:</B><BR>
 Delta values are oversampled 24 times to get hourly resolution, interpolated, then filtered to calculate the mean curve.
@@ -21,7 +26,7 @@ The curves are linear interpolated only.
 <B>Figure 3:</B><BR>
 <img src='figure3.jpg'>
 <BR>
-Day zero on figure 4-6 is 2020-04-01 when the county statistics started to shown on government publications. <Br>
+Day zero on figure 4-7 is 2020-04-01 when the county statistics started to shown on government publications. <Br>
 <B>Figure 4:</B><BR>
 Absolute numbers where max is less than 50.<br>
 <img src='figure4.jpg'>
