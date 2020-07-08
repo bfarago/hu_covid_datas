@@ -33,7 +33,7 @@ iX=[0:1:inputrows]
 close all;
 #figure 8
 dateaxis('x',29, StartDate);
-for n=4:10
+for n=4:11
   tit1=10*(n-1)
   tit= sprintf(";%d-%d;", tit1, tit1+9)
   plot(Datums, da_sum{n}, tit);
