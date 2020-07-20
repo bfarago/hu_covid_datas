@@ -37,6 +37,18 @@ iAInf=interp1( t, ActiveInfected, iX, intpmode);
 #filter
 [iDCured2, lambda]= regdatasmooth(iX, iDCured,"d",4,"stdev",3e+1,"midpointrule");
 #}
+numk = length(Inputs{2});
+for n=1:20
+  p=0
+  for k=1: numk
+    a= Inputs{2}(k,n)
+    if (a < p)
+      Inputs{2}(k,n)=p
+    else
+      p=a
+    end
+  end
+end
 
 #display curves
 close all;
