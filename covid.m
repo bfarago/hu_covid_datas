@@ -53,9 +53,9 @@ Bs = sos(:,1:3); % Section numerator polynomials
 As = sos(:,4:6); % Section denominator polynomials
 iDAInf= filter(Bs, As, iDAInf);
 %}
-[iDCured2, lambda]= regdatasmooth(iX, iDCured,"d",2,"stdev",7e+0,"midpointrule");
-[iDAInf2, lambda]= regdatasmooth(iX, iDAInf,"d",2,"stdev",5e+0,"midpointrule");
-[iDInfected2, lambda]= regdatasmooth(iX, iDInfected,"d",2,"stdev",5e+0,"midpointrule");
+[iDCured2, lambda]= regdatasmooth(iX, iDCured,"d",2,"stdev",12e+0,"midpointrule");
+[iDAInf2, lambda]= regdatasmooth(iX, iDAInf,"d",2,"stdev",12e+0,"midpointrule");
+[iDInfected2, lambda]= regdatasmooth(iX, iDInfected,"d",2,"stdev",12e+0,"midpointrule");
 % K=1341;
 % iAInf=interpft( ActiveInfected, K);
 % iCured=interpft( DCured, K);
