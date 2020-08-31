@@ -74,6 +74,7 @@ plot(Datums, DActiveInfected, '+r;dActive;');
 plot(Datums, DCured, '+g;dCured;');
 plot(Datums, DDied, '+k;dDied;');
 hold off;
+legend("location", "northwest");
 print -djpg 'figure1.jpg'
 % 
 
