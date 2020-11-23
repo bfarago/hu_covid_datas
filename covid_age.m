@@ -16,7 +16,7 @@ Inputs= textscan(fin, '%s %f %f %f %f %f %f %f %f %f %f %f %f %f %f %f %f %f %f 
 fclose(fin);
 DateFormatIn='yyyy-mm-dd';
 StartDate= datenum(Inputs{1}(1,1), DateFormatIn);
-
+wndw = 14;  
 #convert 2D array to 1D arrays
 Datums = [datenum(Inputs{1})-StartDate];
 for n=0:10
@@ -24,6 +24,8 @@ for n=0:10
   da_female{n+1}= Inputs{2}(:, 2+n*3);
   da_sum{n+1}= Inputs{2}(:, 3+n*3);
   dif_sum{n+1}= [ diff( Inputs{2}(:, 3+n*3) ); 0];
+  #avg_dif_sum{n+1}= filter(ones(wndw,1)/(wndw), 1, dif_sum{n+1});
+  avg_dif_sum{n+1} = movmean (dif_sum{n+1}, wndw)
 end
 da_sum{n+1}
 inputrows=rows(Datums)-1
@@ -45,4 +47,25 @@ legend("location", "northwest");
 title('Age structure'), xlabel('Days'), ylabel('Nr of people');
 hold off;
 print -djpg 'figure8.jpg'
+#
+#figure 9
+figure;
+cols={"g","c","b","r","k","m"};
+dateaxis('x',29, StartDate);
+hold on;
+for n=5:10
+  tit1=10*(n-1)
+  col=cols{n-4}
+  tit= sprintf("+%s;%d-%d;", col, tit1, tit1+9)
+  plot(Datums, dif_sum{n}, tit);
+  tit= sprintf("%s;%d-%d;", col, tit1, tit1+9)
+  plot(Datums, avg_dif_sum{n}, tit);
+  #semilogy
+
+end
+dateaxis('x',29, StartDate);
+legend("location", "northwest");
+title('Age structure, diff'), xlabel('Days'), ylabel('Nr of people');
+hold off;
+print -djpg 'figure9.jpg'
 #
