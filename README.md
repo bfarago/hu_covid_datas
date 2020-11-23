@@ -10,7 +10,7 @@ Other curves:
 [Trajectory](https://aatishb.com/covidtrends/?location=Australia&location=Brazil&location=Canada&location=China&location=France&location=Germany&location=Hong+Kong&location=Hungary&location=India&location=Italy&location=Japan&location=Russia&location=Singapore&location=South+Korea&location=Spain&location=Taiwan&location=Turkey&location=US&location=United+Kingdom) |
 [Waze stats](http://wazestats.com/active.php?city=7) |
 [Johns Hopkins University](https://www.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6) |
-[Reproduction numbers](https://stochastik-tu-ilmenau.github.io/COVID-19/)
+[Reproduction numbers](https://stochastik-tu-ilmenau.github.io/COVID-19/) |
 [CoronaHu](https://coronahu.site/)
 
 <BR><BR>
