@@ -11,6 +11,8 @@ Other curves:
 [Waze stats](http://wazestats.com/active.php?city=7) |
 [Johns Hopkins University](https://www.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6) |
 [Reproduction numbers](https://stochastik-tu-ilmenau.github.io/COVID-19/)
+[CoronaHu](https://coronahu.site/)
+
 <BR><BR>
 <CENTER>
 <B>Figure 1:</B><BR>

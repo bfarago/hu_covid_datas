@@ -25,7 +25,7 @@ for n=0:10
   da_sum{n+1}= Inputs{2}(:, 3+n*3);
   dif_sum{n+1}= [ diff( Inputs{2}(:, 3+n*3) ); 0];
   #avg_dif_sum{n+1}= filter(ones(wndw,1)/(wndw), 1, dif_sum{n+1});
-  avg_dif_sum{n+1} = movmean (dif_sum{n+1}, wndw)
+  avg_dif_sum{n+1}=movmean(dif_sum{n+1}, wndw)
 end
 da_sum{n+1}
 inputrows=rows(Datums)-1
