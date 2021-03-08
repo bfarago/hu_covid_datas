@@ -4,7 +4,7 @@ Matlab / Octave example project using Hungarian Covid19 raw datas
 The aim of this project to help on you learing the Matlab script language quickly.
 
 Input data come from this [wikipedia link](https://hu.wikipedia.org/wiki/2020-as_COVID%E2%80%9319-koronav%C3%ADrus-j%C3%A1rv%C3%A1ny_Magyarorsz%C3%A1gon),
-updated on 2021-03-04. <br>
+updated on 2021-03-08. <br>
 Day zero in curves is 2020-03-04 when the first 2 people tested positive to Covid19 in Budapest. <Br>
 Other curves:
 [Trajectory](https://aatishb.com/covidtrends/?location=Australia&location=Brazil&location=Canada&location=China&location=France&location=Germany&location=Hong+Kong&location=Hungary&location=India&location=Italy&location=Japan&location=Russia&location=Singapore&location=South+Korea&location=Spain&location=Taiwan&location=Turkey&location=US&location=United+Kingdom) |
